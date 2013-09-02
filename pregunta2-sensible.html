@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<?php
+if (preg_match('/iphone|ipod|android/',strtolower($_SERVER['HTTP_USER_AGENT'])))
+{
+?>
+<script type='text/javascript' charset='utf-8'>
+    // Hides mobile browser's address bar when page is done loading.
+      window.addEventListener('load', function(e) {
+        setTimeout(function() { window.scrollTo(0, 1); }, 1);
+      }, false);
+</script>
+<?php
+}
+?>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta2.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+
+	$('.senBtn1').transition({opacity: 100 }, 800, 'ease', function(){
+		$('.senBtn2').transition({opacity: 100 }, 800, 'ease', function(){
+			$('.senBtn3').transition({opacity: 100 }, 800, 'ease');
+		});
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bullet">2</div>
+    <div class="textoPregunta2Reng">¿Que ingrediente exclusivo se incluye en la tecnología OPTIDERMA<br>  de Pro Plan Sensitive Skin?</div>
+  </div>
+  <div class="contenido bg2Sen">
+    <div class="botones2Sen">
+      <div class="senBtn1" onClick="javascript:pregunta2sensible(1)" style="opacity:0;"></div>
+      <div class="senBtn2" onClick="javascript:pregunta2sensible(2)" style="opacity:0;"></div>
+      <div class="senBtn3" onClick="javascript:pregunta2sensible(3)" style="opacity:0;"></div>
+    
+    </div>
+   <div class="resultado2Sen" style="display:none; opacity:0;">
+      <div class="senBtn1R"></div>
+      <div class="senBtn2R"></div>
+      <div class="senBtn3R"></div>
+     
+    </div>
+    
+  
+  </div>
+  <div class="linea"></div>
+    
+     <div class="perro2Sen"><img src="img/2_perro_sen.png" ></div>
+      <div class="siguiente"></div>  
+</div>
+<!---main-->
+
+</body>
+</html>

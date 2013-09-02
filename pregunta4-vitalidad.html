@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<?php
+if (preg_match('/iphone|ipod|android/',strtolower($_SERVER['HTTP_USER_AGENT'])))
+{
+?>
+<script type='text/javascript' charset='utf-8'>
+    // Hides mobile browser's address bar when page is done loading.
+      window.addEventListener('load', function(e) {
+        setTimeout(function() { window.scrollTo(0, 1); }, 1);
+      }, false);
+</script>
+<?php
+}
+?>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta3.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+
+	$('.perro4').transition({opacity: 100, delay:100 }, 800, 'ease',function(){
+		$('#bull1').transition({opacity: 100, delay:100 }, 800, 'ease');
+		});
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bulletRojo"></div>
+    <div class="textoPregunta rojo">PRO PLAN&reg; Adult Dog con OptiLife</div>
+  </div>
+  <div class="contenido">
+    <div class="bullets4" id="bull1">
+    	<div class="bullet4Rojo"></div>
+        <div class="textoBullet4">Contiene <span class="rojo">carne fresca de pollo</span> como primer ingrediente, aportando proteínas de la más alta calidad, para mantener músculos fuertes y una óptima salud general.</div>
+   	<div class=" clear bullet4Rojo"></div>
+        <div class="textoBullet4">Contiene <span class="rojo">Aleuronas de Trigo Purificadas</span> y <span class="rojo">Betaglucanos</span> que ayudan a optimizar la función del sistema inmune y el tracto digestivo. </div>
+   
+   	<div class="clear bullet4Rojo"></div>
+      <div class="textoBullet4">Con <span class="rojo">antioxidantes naturales</span> (tocoferoles mixtos) que actúan disminuyendo la acción de los radicales libres</div>
+
+   
+   
+    </div>
+    <div class="perro4" style="opacity:0;"><img src="img/4-perroVitalidad.png" ></div>
+  </div>
+  <div class="linea"></div>
+     <div class="siguiente bajarSig"" onClick="window.location.href='fin.php'" style="display:block;"></div>
+</div>
+<!---main-->
+
+</body>
+</html>

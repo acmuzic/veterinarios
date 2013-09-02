@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<?php
+if (preg_match('/iphone|ipod|android/',strtolower($_SERVER['HTTP_USER_AGENT'])))
+{
+?>
+<script type='text/javascript' charset='utf-8'>
+    // Hides mobile browser's address bar when page is done loading.
+      window.addEventListener('load', function(e) {
+        setTimeout(function() { window.scrollTo(0, 1); }, 1);
+      }, false);
+</script>
+<?php
+}
+?>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta3.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+
+	$('.perro4').transition({opacity: 100, delay:100 }, 800, 'ease',function(){
+		$('#bull1').transition({opacity: 100, delay:100 }, 800, 'ease');
+		});
+
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bulletAmarillo"></div>
+    <div class="textoPregunta amarillo">PRO PLAN® Reduced Calorie Dog con OptiFit</div>
+  </div>
+  <div class="contenido">
+    <div class="bullets4" id="bull1">
+    <div class="b1">
+    	<div class="bullet4Amarillo"></div>
+        <div class="textoBullet4">Formulado con <span class="amarillo">isoflavonas</span>, antioxidantes naturales que ayudan a reducir la grasa acumulada así como a mantener un peso saludable a largo plazo. </div></div>
+        
+      <div class="b2">    
+   	<div class=" clear bullet4Amarillo"></div>
+        <div class="textoBullet4">Posee <span class="amarillo">altos contenidos proteicos</span> para mantener la masa muscular durante el proceso de descenso de peso.</div>
+   </div>
+     <div class="b3">
+   	<div class="clear bullet4Amarillo"></div>
+      <div class="textoBullet4">Contiene <span class="amarillo">bajos niveles de grasa y menos calorías</span>, contribuyendo a controlar el peso corporal y facilitar el adelgazamiento. </div>
+   </div>
+     <div class="b4">
+   	<div class="clear bullet4Amarillo"></div>
+      <div class="textoBullet4">Incluye <span class="amarillo">tres tipos de fibras</span> que sacian el apetito, manteniendo a los perros satisfechos.</div>
+   </div>
+
+   
+   
+    </div>
+    <div class="perro4" style="opacity:0;"><img src="img/4-perroestarEnforma.png" width="382" height="416"></div>
+  </div>
+  <div class="linea"></div>
+     <div class="siguiente bajarSig"" onClick="window.location.href='fin.php'" style="display:block;"></div>
+</div>
+<!---main-->
+
+</body>
+</html>
