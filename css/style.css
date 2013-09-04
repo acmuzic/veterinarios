@@ -77,10 +77,9 @@ h6 {
 }
 .main {
 	width:1200px;
-	
-	height:740px;
-	padding: 15px 0 0 0;
-	position: absolute;
+	height:735px;
+	top:15px;
+	position:absolute;
 	left:40px;
 	
 	overflow:hidden;
