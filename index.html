@@ -64,13 +64,11 @@
 </body>
 </html>
 <script type="text/javascript">
-jQuery(window).load(function() {
-	$('.header').transition({ opacity:100, delay:200}, 500, 'ease', function(){
-		$('.homeTitulo').transition({ opacity:100, delay:200}, 500, 'ease', function(){
-			$('.perroHome').transition({ opacity:100, delay:200}, 1000, 'ease', function(){
-				$('.formulario').transition({ opacity:100, delay:200}, 1000, 'ease', function(){
-					$('.comenzar').transition({ opacity:100, delay:200}, 1000, 'ease');
-				});
+$('.header').transition({ opacity:100, delay:200}, 500, 'ease', function(){
+	$('.homeTitulo').transition({ opacity:100, delay:200}, 500, 'ease', function(){
+		$('.perroHome').transition({ opacity:100, delay:200}, 1000, 'ease', function(){
+			$('.formulario').transition({ opacity:100, delay:200}, 1000, 'ease', function(){
+				$('.comenzar').transition({ opacity:100, delay:200}, 1000, 'ease');
 			});
 		});
 	});
@@ -78,41 +76,41 @@ jQuery(window).load(function() {
 </script>
 <script type="text/javascript" charset="utf-8">
 
-    // Wait for device API libraries to load
-    //
-    //document.addEventListener("deviceready", onDeviceReady, false);
+// Wait for device API libraries to load
+//
+//document.addEventListener("deviceready", onDeviceReady, false);
 
-    // device APIs are available
-    //
-    function guardarDatos() {
-        var db = window.openDatabase("ProPlanVeterinarios", "1.0", "ProPlanVeterinarios", 400000);
-        db.transaction(populateDB, errorCB, successCB);
-    }
+// device APIs are available
+//
+function guardarDatos() {
+	var db = window.openDatabase("ProPlanVeterinarios", "1.0", "ProPlanVeterinarios", 400000);
+	db.transaction(populateDB, errorCB, successCB);
+}
 
-    // Populate the database
-    //
-    function populateDB(tx) {
-        //tx.executeSql('DROP TABLE IF EXISTS DEMO');
-        tx.executeSql('CREATE TABLE IF NOT EXISTS SUSCRIPTORES (id unique, nombre, apellido, email, provincia)');
-		
-		nombre = $('#nombre').val();
-		apellido = $('#apellido').val();
-		email = $('#email').val();
-		provincia = $('#provincia').val();
-		
-        tx.executeSql('INSERT INTO SUSCRIPTORES (id, nombre, apellido, email, provincia) VALUES (1, "'+nombre+'","'+apellido+'","'+email+'","'+provincia+'")');
-    }
+// Populate the database
+//
+function populateDB(tx) {
+	//tx.executeSql('DROP TABLE IF EXISTS DEMO');
+	tx.executeSql('CREATE TABLE IF NOT EXISTS SUSCRIPTORES (id unique, nombre, apellido, email, provincia)');
+	
+	nombre = $('#nombre').val();
+	apellido = $('#apellido').val();
+	email = $('#email').val();
+	provincia = $('#provincia').val();
+	
+	tx.executeSql('INSERT INTO SUSCRIPTORES (id, nombre, apellido, email, provincia) VALUES (1, "'+nombre+'","'+apellido+'","'+email+'","'+provincia+'")');
+}
 
-    // Transaction error callback
-    //
-    function errorCB(tx, err) {
-        alert("Error almacenando datos: "+err);
-    }
+// Transaction error callback
+//
+function errorCB(tx, err) {
+	alert("Error almacenando datos: "+err);
+}
 
-    // Transaction success callback
-    //
-    function successCB() {
-        alert("Datos guardados");
-    }
+// Transaction success callback
+//
+function successCB() {
+	alert("Datos guardados");
+}
 
-    </script>
+</script>
