@@ -9,19 +9,6 @@
 <link href="css/pregunta1.css" rel="stylesheet">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-<?php
-if (preg_match('/iphone|ipod|android/',strtolower($_SERVER['HTTP_USER_AGENT'])))
-{
-?>
-<script type='text/javascript' charset='utf-8'>
-    // Hides mobile browser's address bar when page is done loading.
-      window.addEventListener('load', function(e) {
-        setTimeout(function() { window.scrollTo(0, 1); }, 1);
-      }, false);
-</script>
-<?php
-}
-?>
 <link href="css/style.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/jquery.transit.min.js"></script>
