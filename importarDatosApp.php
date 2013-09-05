@@ -40,7 +40,6 @@ else
 			$response = $db->cargarDatosApp($nombre,$apellido,$email,$provincia,$tecnologia);
 			
 			if($response){
-				$_SESSION['id'] = $response;
 				echo 'OK';
 			}else{
 				echo 'Error: insert';

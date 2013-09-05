@@ -353,6 +353,8 @@ function exportarDatos()
 	{
 		var datos = '';
 		var len = storage.length;
+		alert('Se exportarán '+len+' datos.');
+		
 		for (var i=0; i<len; i++){
 			datos = datos+"|"+storage.getItem(i);
 		}
