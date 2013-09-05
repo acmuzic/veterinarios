@@ -40,7 +40,7 @@ function consultarRegistros(){
 	//storage.clear();
 }
 
-consultarRegistros();
+//consultarRegistros();
 
 //alert('random: '+rnd);
 //alert('carga_fecha: '+carga_fecha);
@@ -71,7 +71,7 @@ function cargarDatos()
 		var provincia = $('#provincia').val();
 		var tecnologia = prod[rnd];
 		
-		alert('itemActual: '+itemActual+' - nombre="'+nombre+'",apellido="'+apellido+'",email="'+email+'",provincia="'+provincia+'"');
+		//alert('itemActual: '+itemActual+' - nombre="'+nombre+'",apellido="'+apellido+'",email="'+email+'",provincia="'+provincia+'"');
 		
 		storage.setItem(itemActual, 'nombre="'+nombre+'",apellido="'+apellido+'",email="'+email+'",provincia="'+provincia+'",carga_fecha="'+carga_fecha+'"');
 		
@@ -86,13 +86,13 @@ function cargarRespuesta(pregunta,respuesta,location)
 {
 	itemActual=itemActual-1;
 	var anteriorValor = storage.getItem(itemActual);
-	alert('anteriorValor: '+anteriorValor);
+	//alert('anteriorValor: '+anteriorValor);
 	var nuevoValor = anteriorValor+','+pregunta+'="'+respuesta+'"';
-	alert('nuevoValor: '+nuevoValor);
+	//alert('nuevoValor: '+nuevoValor);
 	
 	storage.setItem(itemActual, nuevoValor);
 	
-	alert('Valor actualizado: '+storage.getItem(itemActual));
+	//alert('Valor actualizado: '+storage.getItem(itemActual));
 	
 	$('.siguiente').css('display','block');
 	$('.siguiente').click(function(){
