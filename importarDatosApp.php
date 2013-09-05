@@ -35,16 +35,17 @@ else
 		
 		if($response!=false)
 		{
-			echo $response;
+			//echo $response;
 		}else{
-			$response = $db->cargarDatosApp($nombre,$apellido,$email,$provincia,$tecnologia);
+			$response = $db->cargarDatosApp($nombre,$apellido,$email,$provincia,$tecnologia,$carga_fecha,$pregunta1,$pregunta2,$pregunta3);
 			
-			if($response){
-				echo 'OK';
-			}else{
+			if(!$response)
+			{
 				echo 'Error: insert';
 			}
 		}
 	}//cierro for i
+	
+	echo 'OK';
 } 
 ?>

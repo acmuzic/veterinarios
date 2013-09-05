@@ -73,7 +73,7 @@ function cargarDatos()
 		
 		//alert('itemActual: '+itemActual+' - nombre="'+nombre+'";apellido="'+apellido+'";email="'+email+'";provincia="'+provincia+'"');
 		
-		storage.setItem(itemActual, 'nombre="'+nombre+'";apellido="'+apellido+'";email="'+email+'";provincia="'+provincia+'";tecnologia="'+tecnologia+'";carga_fecha="'+carga_fecha+'"');
+		storage.setItem(itemActual, nombre+';'+apellido+';'+email+';'+provincia+';'+tecnologia+';'+carga_fecha);
 		
 		setTimeout(function() {
 			document.location.href = loc;
@@ -87,7 +87,7 @@ function cargarRespuesta(pregunta,respuesta,location)
 	itemActual=itemActual-1;
 	var anteriorValor = storage.getItem(itemActual);
 	//alert('anteriorValor: '+anteriorValor);
-	var nuevoValor = anteriorValor+';'+pregunta+'="'+respuesta+'"';
+	var nuevoValor = anteriorValor+';'+respuesta;
 	//alert('nuevoValor: '+nuevoValor);
 	
 	storage.setItem(itemActual, nuevoValor);
