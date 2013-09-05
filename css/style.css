@@ -93,6 +93,7 @@ h6 {
 	position:absolute;
 	background-color: #1A1A1A;
 	padding-bottom:20px;
+	z-index:100;
 }
 .homeTitulo {
 	position:absolute;
@@ -166,8 +167,9 @@ h6 {
 	margin: 0 0;
 	width:1100px;
 	height:60px;
-	
-	
+	z-index:100;
+	top:-20px;
+	position:absolute;
 }
 
 .bullet {
@@ -182,7 +184,7 @@ h6 {
 	font-size:52px;
 	padding-top:31px;
 	/*padding-top:39px;*/
-	z-index:2000;
+	z-index:201;
 	position:absolute;
 	top:150px;
 }
@@ -271,7 +273,7 @@ h6 {
 	background-repeat:repeat-x;
 	height:116px;
 	position:absolute;
-	z-index:-50;
+	z-index:200;
 	left:45px;
 	padding: 44px 0 0 60px;
 	width:1003px;
@@ -323,7 +325,7 @@ h6 {
 	background:url(../img/linea.jpg);
 	background-repeat:repeat-x;
 	position:absolute;
-	top:750px;
+	top:680px;
 	width:1060px;
 	height:4px;
 }
@@ -334,14 +336,14 @@ h6 {
 	width:197px;
 	height:87px;
 	position:absolute;
-	top:715px;
+	top:645px;
 	cursor:pointer;
 	left:960px;
-	display:block;
+	display:none;
 	z-index:50;
 }
 .bajarSig{
-	top:715px !important;
+	top:645px !important;
 }
 
 .siguiente:hover {background:url(../img/flechaHover.png);	background-repeat:no-repeat;}
