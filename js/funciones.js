@@ -370,11 +370,11 @@ function exportarDatos()
 					success:function(dati, textStatus, XMLHttpRequest){
 						if(dati=='OK')
 						{
-							alert('Datos exportados');
+							alert('Los datos fueron exportados correctamente.');
 							//Limpiar el local storage
 							storage.clear();
 						}else{
-							alert('Error intente nuevamente. Puede que no esté conectado a internet.');
+							alert('Error: '+dati+'. Puede que no esté conectado a internet.');
 						}
 					},
 					error:function (xhr, ajaxOptions, thrownError){

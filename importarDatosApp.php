@@ -13,13 +13,13 @@ else
 	include('ddbb/db.inc.php');
 	$db = new db();
 	
-	$lineas=split('|',$_GET['datos']);
+	$lineas=explode('|',$_GET['datos']);
 	
 	for($i=0;$i<count($lineas);$i++)
 	{
 		//Tomo los valores
 		
-		$val=split(';',$lineas[$i]);
+		$val=explode(';',$lineas[$i]);
 		
 		$nombre=$val[0];
 		$apellido=$val[1];

@@ -190,7 +190,7 @@ class db
 		return $response;
 	}
 	
-	function cargarDatosApp($nombre,$apellido,$email,$provincia,$tecnologia,$fecha_carga,$pregunta1,$pregunta2,$pregunta3)
+	function cargarDatosApp($nombre,$apellido,$email,$provincia,$tecnologia,$carga_fecha,$pregunta1,$pregunta2,$pregunta3)
 	{
 		$this->connect();
 		
