@@ -6,8 +6,8 @@
 
 
 /*-------protInit2--------------------*/
-.bg2Prot {background:url(../img/bg2ProtIni.png);background-repeat:repeat-y;height:473px;	width:1100px;position:absolute; top:250px;}
-.perro2ProtIni{ position:absolute; top:600px; left:20px; width:205px; height:202px;}
+.bg2Prot {background:url(../img/bg2ProtIni.png);background-repeat:repeat-y;height:420px;width:1100px;position:absolute; top:230px;}
+.perro2ProtIni{ position:absolute; top:520px; left:20px; width:205px; height:202px;}
 .botones2ProtIni{padding: 80px 0 0 220px;}
 .protBtn1 { background:url(../img/2-protA.png); background-repeat:no-repeat; width:367px; height:104px; cursor:pointer; float:left; margin-right:60px; margin-bottom:50px; position:absolute; top:120px; left:220px;}
 .protBtn2 { background:url(../img/2-protB.png); background-repeat:no-repeat; width:367px; height:104px; cursor:pointer; float:left; margin-bottom:50px; position:absolute; top:120px;left:640px;}
@@ -30,8 +30,8 @@
 
 
 /*-------vita2--------------------*/
-.bg2Vita {background:url(../img/bg2Vita.png);background-repeat:repeat-y;height:473px;	width:1100px;position:absolute; top:250px;}
-.perro2Vita{ left:60px; width:205px; height:202px; position:absolute; top:440px;}
+.bg2Vita {background:url(../img/bg2Vita.png);background-repeat:repeat-y;height:420px;width:1100px;position:absolute; top:230px;}
+.perro2Vita{ left:60px; width:205px; height:202px; position:absolute; top:360px;}
 .botones2Vita{padding: 25px 0 0 410px;}
 .vitaBtn1 { background:url(../img/2-vitaA.png); background-repeat:no-repeat; width:367px; height:104px; cursor:pointer;  margin-bottom:30px; position:absolute; top:50px;left:410px;}
 .vitaBtn2 { background:url(../img/2-vitaB.png); background-repeat:no-repeat; width:367px; height:104px; cursor:pointer; margin-bottom:30px;position:absolute; top:190px;left:410px;}
@@ -73,8 +73,8 @@
 
 
 /*-------sen2--------------------*/
-.bg2Sen {background:url(../img/bg2Vita.png);background-repeat:repeat-y;height:473px;	width:1100px;position:absolute; top:250px;}
-.perro2Sen{  left:60px; width:205px; height:202px; position:absolute; top:500px;}
+.bg2Sen {background:url(../img/bg2Vita.png);background-repeat:repeat-y;height:420px;width:1100px;position:absolute; top:230px;}
+.perro2Sen{  left:60px; width:205px; height:202px; position:absolute; top:430px;}
 .botones2Sen{padding: 25px 0 0 350px;}
 .senBtn1 { background:url(../img/2-senA.png); background-repeat:no-repeat; width:472px; height:104px; cursor:pointer;  margin-bottom:30px;position:absolute; top:50px;left:360px;}
 .senBtn2 { background:url(../img/2-senB.png); background-repeat:no-repeat; width:472px; height:104px; cursor:pointer; margin-bottom:30px;position:absolute; top:190px;left:360px;}
@@ -94,8 +94,8 @@
 
 
 /*-------plus2--------------------*/
-.bg2Plus {background:url(../img/bg2Vita.png);background-repeat:repeat-y;height:473px;	width:1100px;position:absolute; top:250px;}
-.perro2Plus{   left:60px; width:205px; height:202px; position:absolute; top:450px;}
+.bg2Plus {background:url(../img/bg2Vita.png);background-repeat:repeat-y;height:420px;width:1100px;position:absolute; top:230px;}
+.perro2Plus{   left:60px; width:205px; height:202px; position:absolute; top:370px;}
 .botones2Plus{padding: 25px 0 0 350px;}
 .plusBtn1 { background:url(../img/2-plusA.png); background-repeat:no-repeat; width:472px; height:104px; cursor:pointer;  margin-bottom:30px;position:absolute; top:50px;left:360px;}
 .plusBtn2 { background:url(../img/2-plusB.png); background-repeat:no-repeat; width:472px; height:104px; cursor:pointer; margin-bottom:30px;position:absolute; top:190px;left:360px;}

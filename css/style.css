@@ -375,7 +375,7 @@ h6 {
 /*-----------------------4------------------------------*/
 
 .bullets4{width: 600px; padding: 0 0 0 150px; float:left;   height:450px; position:absolute; top:280px;}
-.perro4{ width:385px; float:left; height:450px;  top:-30px; position:absolute; top:280px; left:750px;}
+.perro4{ width:385px; float:left; height:450px;  top:-30px; position:absolute; top:190px; left:750px;}
 .textoBullet4{ float:left; width:500px; font-size:22px; margin-left:20px; line-height:25px; margin-bottom:30px;}
 
 .bullet4Verde{ background:url(../img/bulletChVerde.png); width:30px; height:30px; float:left;}
