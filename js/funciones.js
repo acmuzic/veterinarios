@@ -37,7 +37,7 @@ function consultarRegistros(){
 		alert('Item '+i+': '+storage.getItem(i));
 	}
 	//Limpiar el local storage
-	//storage.clear();
+	storage.clear();
 }
 
 //consultarRegistros();
@@ -347,42 +347,48 @@ function pregunta3vitalplus(rta)
 /*-------------------------------- EXPORTACION -----------------------------------*/
 function exportarDatos()
 {
-	var confirma = confirm('¿Está seguro de exportar los datos?');
+	var len = storage.length;
 	
-	if(confirma==true)
+	if(len == 0)
 	{
-		var datos = '';
-		var len = storage.length;
-		alert('Se exportarán '+len+' datos.');
+		alert('No hay datos para exportar.');
+	}else{
+		var confirma = confirm('¿Está seguro de exportar '+len+' los datos?');
 		
-		for (var i=0; i<len; i++){
-			datos = datos+"|"+storage.getItem(i);
-		}
-		
-		try {
-				$.ajax({
-					type: "GET",
-					url: "http://proplan.qaserver5.com/app/importarDatosApp.php",
-					dataType: "html",
-					data: {
-						datos: datos
-					},
-					success:function(dati, textStatus, XMLHttpRequest){
-						if(dati=='OK')
-						{
-							alert('Los datos fueron exportados correctamente.');
-							//Limpiar el local storage
-							storage.clear();
-						}else{
-							alert('Error: '+dati+'. Puede que no esté conectado a internet.');
-						}
-					},
-					error:function (xhr, ajaxOptions, thrownError){
-						alert('Error: '+thrownError);
-					}    
-				});
-			} catch (err){
-				alert('Error intente nuevamente. Puede que no esté conectado a internet (try).');
+		if(confirma==true)
+		{
+			var datos = '';
+			alert('Se exportarán '+len+' datos.');
+			
+			for (var i=0; i<len; i++){
+				datos = datos+"|"+storage.getItem(i);
+			}
+			
+			try {
+					$.ajax({
+						type: "GET",
+						url: "http://proplan.qaserver5.com/app/importarDatosApp.php",
+						dataType: "html",
+						data: {
+							datos: datos
+						},
+						success:function(dati, textStatus, XMLHttpRequest){
+							if(dati=='OK')
+							{
+								alert('Los datos fueron exportados correctamente.');
+								//Limpiar el local storage
+								storage.clear();
+							}else{
+								alert('Error: '+dati+'. Puede que no esté conectado a internet.');
+							}
+						},
+						error:function (xhr, ajaxOptions, thrownError){
+							alert('Error: '+thrownError);
+						}    
+					});
+				} catch (err){
+					alert('Error intente nuevamente. Puede que no esté conectado a internet (try).');
+				}
 			}
 		}
 	}
