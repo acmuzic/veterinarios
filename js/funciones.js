@@ -143,7 +143,7 @@ function pregunta1optistart(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optistart.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optistart.html');
 }
 
 function pregunta2optistart(rta)
@@ -157,7 +157,7 @@ function pregunta2optistart(rta)
 	//Animación respuesta
 	$('.resultado2optistart').css('display','block');
 	$('.resultado2optistart').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optistart.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optistart.html');
 }
 
 function pregunta3optistart(rta)
@@ -171,7 +171,7 @@ function pregunta3optistart(rta)
 	//Animación respuesta
 	$('.resultado3optistart').css('display','block');
 	$('.resultado3optistart').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optistart.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optistart.html');
 }
 
 
@@ -193,7 +193,7 @@ function pregunta1optilife(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optilife.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optilife.html');
 }
 
 function pregunta2optilife(rta)
@@ -207,7 +207,7 @@ function pregunta2optilife(rta)
 	//Animación respuesta
 	$('.resultado2Vita').css('display','block');
 	$('.resultado2Vita').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optilife.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optilife.html');
 }
 
 function pregunta3optilife(rta)
@@ -221,7 +221,7 @@ function pregunta3optilife(rta)
 	//Animación respuesta
 	$('.resultado3Vita').css('display','block');
 	$('.resultado3Vita').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optilife.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optilife.html');
 }
 
 
@@ -239,7 +239,7 @@ function pregunta1optiage(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optiage.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optiage.html');
 }
 
 function pregunta2optiage(rta)
@@ -253,7 +253,7 @@ function pregunta2optiage(rta)
 	//Animación respuesta
 	$('.resultado2Plus').css('display','block');
 	$('.resultado2Plus').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optiage.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optiage.html');
 }
 
 function pregunta3optiage(rta)
@@ -267,7 +267,7 @@ function pregunta3optiage(rta)
 	//Animación respuesta
 	$('.resultado3PlusInic').css('display','block');
 	$('.resultado3PlusInic').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optiage.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optiage.html');
 }
 
 
@@ -286,7 +286,7 @@ function pregunta1optifit(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optifit.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optifit.html');
 }
 
 function pregunta2optifit(rta)
@@ -300,7 +300,7 @@ function pregunta2optifit(rta)
 	//Animación respuesta
 	$('.resultado2Forma').css('display','block');
 	$('.resultado2Forma').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optifit.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optifit.html');
 }
 
 function pregunta3optifit(rta)
@@ -314,7 +314,7 @@ function pregunta3optifit(rta)
 	//Animación respuesta
 	$('.resultado3Forma').css('display','block');
 	$('.resultado3Forma').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optifit.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optifit.html');
 }
 
 
@@ -337,7 +337,7 @@ function pregunta1optiderma(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optiderma.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optiderma.html');
 }
 
 function pregunta2optiderma(rta)
@@ -351,7 +351,7 @@ function pregunta2optiderma(rta)
 	//Animación respuesta
 	$('.resultado2Sen').css('display','block');
 	$('.resultado2Sen').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optiderma.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optiderma.html');
 }
 
 function pregunta3optiderma(rta)
@@ -365,7 +365,7 @@ function pregunta3optiderma(rta)
 	//Animación respuesta
 	$('.resultado3Sen').css('display','block');
 	$('.resultado3Sen').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optiderma.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optiderma.html');
 }
 
 
@@ -388,7 +388,7 @@ function pregunta1optifortis(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optifortis.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optifortis.html');
 }
 
 function pregunta2optifortis(rta)
@@ -402,7 +402,7 @@ function pregunta2optifortis(rta)
 	//Animación respuesta
 	$('.resultado2optifortis').css('display','block');
 	$('.resultado2optifortis').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optifortis.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optifortis.html');
 }
 
 function pregunta3optifortis(rta)
@@ -416,7 +416,7 @@ function pregunta3optifortis(rta)
 	//Animación respuesta
 	$('.resultado3optifortis').css('display','block');
 	$('.resultado3optifortis').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optifortis.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optifortis.html');
 }
 
 
@@ -434,7 +434,7 @@ function pregunta1optienrich(rta)
 	//Animación respuesta
 	$('.resultado').css('display','block');
 	$('.resultado').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta1',respuesta,'pregunta2-optienrich.php');
+	cargarRespuesta('pregunta1',respuesta,'pregunta2-optienrich.html');
 }
 
 function pregunta2optienrich(rta)
@@ -448,7 +448,7 @@ function pregunta2optienrich(rta)
 	//Animación respuesta
 	$('.resultado2optienrich').css('display','block');
 	$('.resultado2optienrich').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta2',respuesta,'pregunta3-optienrich.php');
+	cargarRespuesta('pregunta2',respuesta,'pregunta3-optienrich.html');
 }
 
 function pregunta3optienrich(rta)
@@ -462,7 +462,7 @@ function pregunta3optienrich(rta)
 	//Animación respuesta
 	$('.resultado3optienrich').css('display','block');
 	$('.resultado3optienrich').transition({opacity:100}, 1500, 'ease');
-	cargarRespuesta('pregunta3',respuesta,'pregunta4-optienrich.php');
+	cargarRespuesta('pregunta3',respuesta,'pregunta4-optienrich.html');
 }
 
 /*-------------------------------- EXPORTACION -----------------------------------*/
