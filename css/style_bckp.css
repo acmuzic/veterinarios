@@ -232,7 +232,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:38px;
-	z-index:2000;
+	position:absolute;
+	z-index:10;
 }
 
 .bulletVerde {
@@ -245,7 +246,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:31px;
-	z-index:1000;
+	position:absolute;
+	z-index:10;
 }
 .bulletRojo {
 	float:left;  
@@ -257,7 +259,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:31px;
-	z-index:1000;
+	position:absolute;
+	z-index:10;
 }
 .bulletAmarillo {
 	float:left;  
@@ -269,7 +272,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:31px;
-	z-index:1000;
+	position:absolute;
+	z-index:10;
 }
 .bulletRosa {
 	float:left;  
@@ -281,7 +285,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:31px;
-	z-index:1000;
+	position:absolute;
+	z-index:10;
 }
 .bulletAzul {
 	float:left;  
@@ -293,7 +298,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:31px;
-	z-index:1000;
+	position:absolute;
+	z-index:10;
 }
 .bulletVioleta {
 	float:left;  
@@ -305,7 +311,8 @@ h6 {
 	color:#000;
 	font-size:52px;
 	padding-top:31px;
-	z-index:1000;
+	position:absolute;
+	z-index:10;
 }
 
 .verde{color:#004E3E; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
@@ -321,7 +328,7 @@ h6 {
 	background-repeat:repeat-x;
 	height:50px;
 	position:absolute;
-	z-index:-50;
+	z-index:5;
 	left:45px;
 	padding: 38px 0 0 60px;
 	width:1003px;
@@ -333,9 +340,9 @@ h6 {
 	background-repeat:repeat-x;
 	height:116px;
 	position:absolute;
-	z-index:-50;
+	z-index:5;
 	left:45px;
-	padding: 14px 0 0 60px;
+	padding: 24px 0 0 60px;
 	line-height:30px;
 	width:1003px;
 	font-size:26px;
@@ -430,7 +437,7 @@ h6 {
 
 .bullets4{width: 600px; padding: 0 0 0 150px; float:left;   height:450px;}
 .perro4{ width:385px; float:left; height:450px; position:relative; top:-65px;}
-.textoBullet4{ float:left; width:500px; font-size:22px; margin-left:20px; line-height:25px; margin-bottom:30px;}
+.textoBullet4{ float:left; width:500px; font-size:22px; margin-left:20px; line-height:25px; margin-bottom:20px;}
 
 .bullet4Verde{ background:url(../img/bulletChVerde.png); width:30px; height:30px; float:left;}
 .bullet4Rojo{ background:url(../img/bulletChRojo.png); width:30px; height:30px; float:left;}
