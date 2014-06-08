@@ -321,7 +321,7 @@ h6 {
 	background-repeat:repeat-x;
 	height:50px;
 	position:absolute;
-	z-index:-50;
+	z-index:5;
 	left:45px;
 	padding: 38px 0 0 60px;
 	width:1003px;
@@ -333,7 +333,7 @@ h6 {
 	background-repeat:repeat-x;
 	height:116px;
 	position:absolute;
-	z-index:-50;
+	z-index:5;
 	left:45px;
 	padding: 14px 0 0 60px;
 	line-height:30px;

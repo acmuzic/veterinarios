@@ -11,15 +11,6 @@ prod[6]='pregunta1-optifortis.html';
 prod[7]='pregunta1-optienrich.html';
 
 
-/*
-prod[1]='pregunta1-protInic.html'; -
-prod[2]='pregunta1-estarenforma.html'; - 
-prod[3]='pregunta1-sensible.html'; - 
-prod[4]='pregunta1-vitalidad.html';
-prod[5]='pregunta1-vitalplus.html';
-*/
-
-
 //Busco el valor de random de 1 a 5
 var rnd = Math.floor((Math.random()*10)+1);
 
