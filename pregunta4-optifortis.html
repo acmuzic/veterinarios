@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta3.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+
+	$('.perro4').transition({opacity: 100, delay:100 }, 800, 'ease',function(){
+		$('#bull1').transition({opacity: 100, delay:100 }, 800, 'ease');
+		});
+
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bulletRosa"></div>
+    <div class="textoPregunta rosa">PRO PLAN® Delicate Small Breed con Opti Fortis</div>
+  </div>
+  <div class="contenido">
+    <div class="bullets4" id="bull1">
+    	<div class="bullet4Rosa"></div>
+        <div class="textoBullet4">Formulado con <span class="rosa">OptiFortis</span>, tecnología de vanguardia para satisfacer las necesidades metabólicas de los perros adultos de razas pequeñas con estructuras frágiles.</div>
+
+   	<div class=" clear bullet4Rosa"></div>
+        <div class="textoBullet4">Incluye como ingrediente principal <span class="rosa">carne fresca de salmón</span>, fuente de proteínas de excelente calidad y rico contenido en ácidos grasos omega 3, ayudando a mantener las pieles delicadas en óptimas condiciones.</div>
+   
+   	<div class="clear bullet4Rosa"></div>
+      <div class="textoBullet4">Con pirofosfatos tetrasódicos que reducen en un 20% la formación de sarro.</div>
+   
+   	<div class="clear bullet4Rosa"></div>
+      <div class="textoBullet4">Todo ello en unas <span class="rosa">irresistibles croquetas</span> diseñadas especialmente para perros adultos de razas pequeñas.</div>
+   
+   
+   
+    </div>
+    <div class="perro4" style="opacity:0;"><img src="img/4-perroOptifortis.png" width="382" height="416"></div>
+  </div>
+  <div class="linea"></div>
+     <div class="siguiente bajarSig"" onClick="window.location.href='fin.php'" style="display:block;"></div>
+</div>
+<!---main-->
+
+</body>
+</html>

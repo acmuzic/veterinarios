@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta3.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+
+	$('.optienrichA').transition({opacity: 100 }, 800, 'ease', function(){
+		$('.optienrichB').transition({opacity: 100 }, 800, 'ease', function(){
+			$('.optienrichC').transition({opacity: 100 }, 800, 'ease', function(){
+				$('.optienrichD').transition({opacity: 100 }, 800, 'ease', function(){
+					$('.optienrichE').transition({opacity: 100 }, 800, 'ease');
+				});
+			});
+		});
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bullet">3</div>
+    <div class="textoPregunta3Reng" style="font-size:29px">¿Qué hace diferente al Pro Plan Exigent?</div>
+  </div>
+  <div class="contenido bg3Sen">
+    
+    <div class="botones3optienrich">
+      <div class="optienrichA" onClick="javascript:pregunta3optienrich(1)" style="opacity:0"></div>
+      <div class="optienrichB" onClick="javascript:pregunta3optienrich(2)" style="opacity:0"></div>
+      <div class="optienrichC" onClick="javascript:pregunta3optienrich(3)" style="opacity:0"></div>
+      <div class="optienrichD" onClick="javascript:pregunta3optienrich(4)" style="opacity:0"></div>
+      <div class="optienrichE" onClick="javascript:pregunta3optienrich(5)" style="opacity:0"></div>
+    </div>
+   <div class="resultado3optienrich" style="display:none; opacity:0;">
+      <div class="optienrichAR"></div>
+      <div class="optienrichBR"></div>
+      <div class="optienrichCR"></div>
+      <div class="optienrichDR"></div>
+      <div class="optienrichER"></div>
+    </div>
+    
+  
+  </div>
+  <div class="linea"></div>
+     <div class="siguiente bajarSig"></div>
+</div>
+<!---main-->
+
+</body>
+</html>

@@ -17,10 +17,6 @@
          url('../fonts/universltstd-boldcn.svg#UniversLTStd67BoldCondensed') format('svg');
 }
 
-* {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
-}
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
 	display: block;
 }
@@ -80,12 +76,15 @@ h6 {
 	clear:both;
 }
 .main {
-	width:1200px;
-	height:735px;
-	top:15px;
-	position:absolute;
-	left:40px;
-	
+	width:1150px;
+	padding: 0 90px;
+	height:700px;
+	padding: 5px 0 0 0;
+	position: absolute;
+	left: 50%;
+	/*top: 50%;
+	margin-top: -415px;*/
+	margin-left: -550px;
 	overflow:hidden;
 	
 }
@@ -94,39 +93,25 @@ h6 {
 /*-----------------------index-------------------------------*/
 
 .header {
-	position:absolute;
 	background-color: #1A1A1A;
-	padding-bottom:20px;
-	z-index:100;
+	/*padding-bottom:20px;*/
 }
 .homeTitulo {
-	position:absolute;
-	top:150px;
-	margin:35px 0 20px 400px;
+	margin:10px 0 20px 400px;
 	width:680px;
 	font-size:29px;
 }
 .perroHome {
-	position:absolute;
-	top:240px;
-	left:30px;
-	
+	position:relative;
+	top:-80px;
+	left:20px;
+	float:left;
 }
 .formulario {
-	
-
-	margin: 35px 0 0 457px;
+	float:left;
+	margin: 0px 0 0 30px;
 }
-#email{
-	position:absolute;
-	top:300px;}
-	#nombre{
-	position:absolute;
-	top:390px;}
-		#apellido{
-	position:absolute;
-	top:480px;}
-		
+
 .campo1 {
 	background:url(../img/campo.png);
 	border:none;
@@ -144,8 +129,6 @@ h6 {
 	width:521px;
 	height:63px;
 	margin-bottom:20px;
-	position:absolute;
-	top:570px;
 }
 
 #provincia
@@ -162,6 +145,72 @@ h6 {
 	font-family: 'UniversCn', Verdana, sans-serif;
 }
 
+#nav {
+	display:inline;
+	text-align:left;
+	position:relative;
+	list-style-type:none;
+}
+#nav > li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:22px;
+	width: 521px;
+	height:63px;
+	background:url(../img/campo2.png);
+	color:#808080;
+	float:left;
+	padding:0;
+	position:relative;
+}
+#nav > li > a {
+	display:block;
+	color:#808080;
+	font-size:22px;
+	padding:24px 40px;
+	position:relative;
+	text-decoration:none;
+}
+#nav > li.selected > a {
+	z-index:2;
+}
+#nav li div {
+	position:relative;
+}
+#nav li div div {
+	background-color:#FFFFFF;
+	padding:12px 40px;
+	width: 432px;
+	display:none;
+	font-size:19px;
+	margin:0;
+	position:absolute;
+	top:-1px;
+	z-index:1;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:5px solid #999999;
+}
+#nav li div ul {
+	padding-left:0px;
+	padding-right:10px;
+	position:relative;
+	width:400px;
+	float:left;
+	list-style-type:none;
+}
+#nav li ul a {
+	color:#808080;
+	display:block;
+	margin-bottom:1px;
+	padding:3px 5px;
+	text-decoration:none;
+}
+#nav li ul a:hover {
+	background-color:#808080;
+	color:#fff;
+}
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*-----------------------preguntas--------------------------*/
@@ -171,26 +220,19 @@ h6 {
 	margin: 0 0;
 	width:1100px;
 	height:60px;
-	z-index:100;
-	top:-20px;
-	position:absolute;
 }
 
 .bullet {
 	float:left;
 	width:82px;
-	/*height:70px;*/
-	height:79px;
+	height:68px;
 	background:url(../img/bulletPregunta.png);
 	background-repeat:no-repeat;
 	text-align:center;
 	color:#000;
 	font-size:52px;
-	padding-top:31px;
-	/*padding-top:39px;*/
-	z-index:201;
-	position:absolute;
-	top:150px;
+	padding-top:38px;
+	z-index:2000;
 }
 
 .bulletVerde {
@@ -204,8 +246,6 @@ h6 {
 	font-size:52px;
 	padding-top:31px;
 	z-index:1000;
-	position:absolute;
-	top:150px;
 }
 .bulletRojo {
 	float:left;  
@@ -218,8 +258,6 @@ h6 {
 	font-size:52px;
 	padding-top:31px;
 	z-index:1000;
-	position:absolute;
-	top:150px;
 }
 .bulletAmarillo {
 	float:left;  
@@ -232,8 +270,6 @@ h6 {
 	font-size:52px;
 	padding-top:31px;
 	z-index:1000;
-	position:absolute;
-	top:150px;
 }
 .bulletRosa {
 	float:left;  
@@ -246,8 +282,6 @@ h6 {
 	font-size:52px;
 	padding-top:31px;
 	z-index:1000;
-	position:absolute;
-	top:150px;
 }
 .bulletAzul {
 	float:left;  
@@ -260,30 +294,38 @@ h6 {
 	font-size:52px;
 	padding-top:31px;
 	z-index:1000;
-	position:absolute;
-	top:150px;
+}
+.bulletVioleta {
+	float:left;  
+	width:82px;
+	height:79px;
+	background:url(../img/bulletPreguntaVioleta.png);
+	background-repeat:no-repeat;
+	text-align:center;
+	color:#000;
+	font-size:52px;
+	padding-top:31px;
+	z-index:1000;
 }
 
-
-.verde{color:#4499A0; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
-.rojo{color:#C0272D; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
-.amarillo{color:#D0A905; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
-.rosa{color:#FFBA9E; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
-.azul{color:#3366A7; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
+.verde{color:#004E3E; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
+.rojo{color:#6B0021; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
+.amarillo{color:#6A641A; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
+.rosa{color:#F27450; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
+.azul{color:#004385; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
+.violeta{color:#480F64; font-family: 'UniversBoldCnOb', Verdana, sans-serif;}
 
 .textoPregunta {
 	float:left;
 	background-image:url(../img/bgPregunta.png);
 	background-repeat:repeat-x;
-	height:116px;
+	height:50px;
 	position:absolute;
-	z-index:200;
+	z-index:-50;
 	left:45px;
-	padding: 44px 0 0 60px;
+	padding: 38px 0 0 60px;
 	width:1003px;
 	font-size:30px;
-	position:absolute;
-	top:150px;
 }
 .textoPregunta2Reng {
 	float:left;
@@ -293,12 +335,10 @@ h6 {
 	position:absolute;
 	z-index:-50;
 	left:45px;
-	padding: 22px 0 0 60px;
-	line-height:32px;
+	padding: 14px 0 0 60px;
+	line-height:30px;
 	width:1003px;
-	font-size:30px;
-	position:absolute;
-	top:150px;
+	font-size:26px;
 }
 .textoPregunta3Reng {
 	float:left;
@@ -313,24 +353,32 @@ h6 {
 	width:1003px;
 	letter-spacing:-0.5px;
 	font-size:30px;
+}
+
+.ruedaChica {
+	width:210px;
+	height:210px;
 	position:absolute;
-	top:150px;
+	z-index:100;
+	top:125px;
+	left:900px;
 }
 
 .contenido {
 	clear:both;
-	padding-top:30px;
-	height:675px;
+	padding-top:10px;
+	height:420px;
 	overflow:hidden;
+	position:relative;
 	width:1200px;
+	top:-30px;
+	left:-50px;
 }
-.linea {	
+.linea {
+	border-bottom:2px solid #313131;
 	margin: 0 50px;
-	background:url(../img/linea.jpg);
-	background-repeat:repeat-x;
-	position:absolute;
-	top:680px;
-	width:1060px;
+	position:relative;
+	top:-34px;
 	height:4px;
 }
 
@@ -339,15 +387,15 @@ h6 {
 	background-repeat:no-repeat;
 	width:197px;
 	height:87px;
-	position:absolute;
-	top:645px;
+	position:relative;
+	top:-280px;
 	cursor:pointer;
-	left:960px;
+	left:920px;
 	display:none;
 	z-index:50;
 }
 .bajarSig{
-	top:645px !important;
+	top:-75px !important;
 }
 
 .siguiente:hover {background:url(../img/flechaHover.png);	background-repeat:no-repeat;}
@@ -359,7 +407,7 @@ h6 {
 	width:225px;
 	height:72px;
 	position:absolute;
-	top:655px;
+	top:570px;
 	cursor:pointer;
 	left:755px;
 	z-index:30;
@@ -378,8 +426,10 @@ h6 {
 /*----------------------------------------------------------*/
 /*-----------------------4------------------------------*/
 
-.bullets4{width: 600px; padding: 0 0 0 150px; float:left;   height:450px; position:absolute; top:280px;}
-.perro4{ width:385px; float:left; height:450px;  top:-30px; position:absolute; top:190px; left:750px;}
+
+
+.bullets4{width: 600px; padding: 0 0 0 150px; float:left;   height:450px;}
+.perro4{ width:385px; float:left; height:450px; position:relative; top:-65px;}
 .textoBullet4{ float:left; width:500px; font-size:22px; margin-left:20px; line-height:25px; margin-bottom:30px;}
 
 .bullet4Verde{ background:url(../img/bulletChVerde.png); width:30px; height:30px; float:left;}
@@ -387,11 +437,12 @@ h6 {
 .bullet4Amarillo{ background:url(../img/bulletChAmarillo.png); width:30px; height:30px; float:left;}
 .bullet4Rosa{ background:url(../img/bulletChRosa.png); width:30px; height:30px; float:left;}
 .bullet4Azul{ background:url(../img/bulletChAzul.png); width:30px; height:30px; float:left;}
+.bullet4Violeta{ background:url(../img/bulletChVioleta.png); width:30px; height:30px; float:left;}
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*-----------------------final------------------------------*/
-.finPerro{width:456px; position:absolute; top:160px;}
-.finTexto{width:650px; position:absolute; top:130px; left:500px;}
+.finPerro{width:456px; float:left;}
+.finTexto{width:650px; float:left; }
 
 /*----------------------------- BULLETS ------------------------------*/
 #bull1,#bull2,#bull2,#bull4,#bull5,#bull6,#bull7,#bull8

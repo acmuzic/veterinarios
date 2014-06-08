@@ -2,11 +2,23 @@
 
 //Defino los caminos posibles
 var prod = Array();
-prod[1]='pregunta1-protInic.html';
-prod[2]='pregunta1-estarenforma.html';
-prod[3]='pregunta1-sensible.html';
+prod[1]='pregunta1-optistart.html';
+prod[2]='pregunta1-optilife.html';
+prod[3]='pregunta1-optiage.html';
+prod[4]='pregunta1-optifit.html';
+prod[5]='pregunta1-optiderma.html';
+prod[6]='pregunta1-optifortis.html';
+prod[7]='pregunta1-optienrich.html';
+
+
+/*
+prod[1]='pregunta1-protInic.html'; -
+prod[2]='pregunta1-estarenforma.html'; - 
+prod[3]='pregunta1-sensible.html'; - 
 prod[4]='pregunta1-vitalidad.html';
 prod[5]='pregunta1-vitalplus.html';
+*/
+
 
 //Busco el valor de random de 1 a 5
 var rnd = Math.floor((Math.random()*10)+1);
@@ -118,9 +130,9 @@ function isEmail(str)
 			
 */
 
-//pregunta1ProtInic
+//pregunta1optistart
 
-function pregunta1ProtInic(rta)
+function pregunta1optistart(rta)
 {
 	if(rta==1)
 	{
@@ -134,7 +146,7 @@ function pregunta1ProtInic(rta)
 	cargarRespuesta('pregunta1',respuesta,'pregunta2-protInic.html');
 }
 
-function pregunta2ProtInic(rta)
+function pregunta2optistart(rta)
 {
 	if(rta==1)
 	{
@@ -143,12 +155,12 @@ function pregunta2ProtInic(rta)
 		respuesta=0;
 	}
 	//Animación respuesta
-	$('.resultado2ProtInic').css('display','block');
-	$('.resultado2ProtInic').transition({opacity:100}, 1500, 'ease');
+	$('.resultado2optistart').css('display','block');
+	$('.resultado2optistart').transition({opacity:100}, 1500, 'ease');
 	cargarRespuesta('pregunta2',respuesta,'pregunta3-protInic.html');
 }
 
-function pregunta3ProtInic(rta)
+function pregunta3optistart(rta)
 {
 	if(rta==4)
 	{
@@ -157,8 +169,8 @@ function pregunta3ProtInic(rta)
 		respuesta=0;
 	}
 	//Animación respuesta
-	$('.resultado3ProtInic').css('display','block');
-	$('.resultado3ProtInic').transition({opacity:100}, 1500, 'ease');
+	$('.resultado3optistart').css('display','block');
+	$('.resultado3optistart').transition({opacity:100}, 1500, 'ease');
 	cargarRespuesta('pregunta3',respuesta,'pregunta4-protInic.html');
 }
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta3.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+
+	$('.perro4').transition({opacity: 100, delay:100 }, 800, 'ease',function(){
+		$('#bull1').transition({opacity: 100, delay:100 }, 800, 'ease');
+		});
+
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bulletRosa"></div>
+    <div class="textoPregunta rosa">PRO PLAN® Sensitive Skin Dog con OptiDerma</div>
+  </div>
+  <div class="contenido">
+    <div class="bullets4" id="bull1" style="width:570px; margin-right:30px;">
+    
+    	<div class="bullet4Rosa"></div>
+        <div class="textoBullet4">Formulado con una <span class="rosa">fuente alternativa de proteínas</span> para lograr una dieta de alta tolerancia.</div>
+        
+    	<div class="bullet4Rosa"></div>
+        <div class="textoBullet4">Incluye <span class="rosa">carne fresca de salmón</span>, fuente proteica ideal para perros sensibles. Ayuda a reducir la sensibilidad digestiva y a promover una salud óptima.</div>
+        
+   	<div class=" clear bullet4Rosa"></div>
+        <div class="textoBullet4">Aporta un óptimo balance de <span class="rosa">proteínas de alta calidad, vitaminas y minerales</span> para promover una salud inmejorable.</div>
+   
+   	<div class="clear bullet4Rosa"></div>
+      <div class="textoBullet4">Incluye ingredientes de la más alta calidad que le otorgan un sabor superior.</div>
+   
+    </div>
+    <div class="perro4" style="opacity:0;"><img src="img/4-perroSensible.png" width="382" height="416"></div>
+  </div>
+  <div class="linea"></div>
+     <div class="siguiente bajarSig"" onClick="window.location.href='fin.php'" style="display:block;"></div>
+</div>
+<!---main-->
+
+</body>
+</html>

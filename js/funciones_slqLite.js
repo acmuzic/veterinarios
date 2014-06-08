@@ -174,9 +174,9 @@ function isEmail(str)
 			
 */
 
-//pregunta1ProtInic
+//pregunta1optistart
 
-function pregunta1ProtInic(rta)
+function pregunta1optistart(rta)
 {
 	if(rta==1)
 	{
@@ -190,7 +190,7 @@ function pregunta1ProtInic(rta)
 	cargarRespuesta('pregunta1',respuesta,'pregunta2-protInic.php');
 }
 
-function pregunta2ProtInic(rta)
+function pregunta2optistart(rta)
 {
 	if(rta==1)
 	{
@@ -199,12 +199,12 @@ function pregunta2ProtInic(rta)
 		respuesta=0;
 	}
 	//Animación respuesta
-	$('.resultado2ProtInic').css('display','block');
-	$('.resultado2ProtInic').transition({opacity:100}, 1500, 'ease');
+	$('.resultado2optistart').css('display','block');
+	$('.resultado2optistart').transition({opacity:100}, 1500, 'ease');
 	cargarRespuesta('pregunta2',respuesta,'pregunta3-protInic.php');
 }
 
-function pregunta3ProtInic(rta)
+function pregunta3optistart(rta)
 {
 	if(rta==4)
 	{
@@ -213,8 +213,8 @@ function pregunta3ProtInic(rta)
 		respuesta=0;
 	}
 	//Animación respuesta
-	$('.resultado3ProtInic').css('display','block');
-	$('.resultado3ProtInic').transition({opacity:100}, 1500, 'ease');
+	$('.resultado3optistart').css('display','block');
+	$('.resultado3optistart').transition({opacity:100}, 1500, 'ease');
 	cargarRespuesta('pregunta3',respuesta,'pregunta4-protInic.php');
 }
 

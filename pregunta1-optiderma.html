@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Pro Plan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pregunta1.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script>
+$(window).load(function() {
+	//$('.ruedaGeneral').transition({ rotate: '2235deg' }, 2500, 'ease');
+	$('.ruedaProt').transition({ rotate: '2420deg', opacity: 100 }, 6000, 'ease', function(){
+		$('.ruedaGeneral').transition({ opacity: 0, delay: 100 }, 601, 'ease', function(){
+			$('.ruedaProt').transition({ opacity: 0, delay: 100 }, 800, 'ease-out', function(){
+				$('.ruedaChica').transition({ opacity: 100, delay: 100 }, 800, 'ease', function(){
+					$('.cartel').transition({ y:195, delay:300}, 1000, 'ease', function(){
+						$('.productos').transition({ opacity:100, delay:200}, 1000, 'ease');
+					});
+				});
+			});
+		});
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+    <div class="ruedaChica" style="opacity:0;"><img src="img/ruedaSensiblChica.png" width="210" height="210"></div>
+  <div class="header"> <img src="img/titulo.jpg" width="1111" height="118" alt="ProPlan"></div>
+  <div class="pregunta">
+    <div class="bullet">1</div>
+    <div class="textoPregunta">¿Qué producto corresponde a esta tecnología?</div>
+  </div>
+  
+  <div class="contenido">
+  <div class="bajar"></div>
+    <div class="ruedaProt" style="opacity:0;"><img src="img/ruedaSensibl.png" width="428" height="428"></div>
+    <div class="ruedaGeneral"><img src="img/rueda.png" width="428" height="428"></div>
+    <div class="cartel">OPTIDERMA</div>
+    <ul class="productos">
+    	<li><a class="ProdPuppy" href="javascript:pregunta1optiderma(1)"></a></li>
+        <li><a class="ProdAdult" href="javascript:pregunta1optiderma(2)"></a></li>
+        <li><a class="ProdMas7" href="javascript:pregunta1optiderma(3)"></a></li>
+        <li><a class="ProdReduced" href="javascript:pregunta1optiderma(4)"></a></li>
+        <li><a class="ProdSensitive" href="javascript:pregunta1optiderma(5)"></a></li>
+        <li><a class="ProdDelicate" href="javascript:pregunta1optiderma(6)"></a></li>
+        <li><a class="ProdExigent" href="javascript:pregunta1optiderma(7)"></a></li>
+    </ul>
+    
+<ul class="resultado clear" style="display:none; opacity:0;">
+<li><div class="tamanoImg"><img src="img/prod1.jpg" width="139" height="241"></div><span >OPTISTART</span> <div class="resulI"></div></li>
+<li><div class="tamanoImg"><img src="img/prod2Hover.jpg" width="139" height="241"></div><span>OPTILIFE</span><div class="resulI"></div></li>
+<li><div class="tamanoImg"><img src="img/prod5Hover.jpg" width="139" height="241"></div><span>OPTIAGE</span><div class="resulI"></div></li>
+<li><div class="tamanoImg"><img src="img/prod3Hover.jpg" width="139" height="241"></div><span>OPTIFIT</span><div class="resulI"></div></li>
+<li><div class="tamanoImg"><img src="img/prod4Hover.jpg" width="139" height="241"></div><span class="correcto">¡OPTIDERMA!</span><div class="resulC"></div></li>
+<li><div class="tamanoImg"><img src="img/prod6Hover.jpg" width="139" height="241"></div><span>OPTIFORTIS</span><div class="resulI"></div></li>
+<li><div class="tamanoImg"><img src="img/prod7Hover.jpg" width="139" height="241"></div><span>OPTIENRICH</span><div class="resulI"></div></li>
+</ul>
+   
+     </div> <div class="linea"></div>
+     <div class="siguiente bajarSig"></div>
+    
+ 
+</div> 
+<!---main--> 
+
+</body>
+</html>
